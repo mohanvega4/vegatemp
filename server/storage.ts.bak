@@ -1,0 +1,636 @@
+import { users, type User, type InsertUser, events, type Event, type InsertEvent, activities, type Activity, type InsertActivity } from "@shared/schema";
+import session from "express-session";
+import createMemoryStore from "memorystore";
+import { db } from "./db";
+import { eq, desc, and, SQL, sql } from "drizzle-orm";
+import connectPg from "connect-pg-simple";
+import { pool } from "./db";
+
+const MemoryStore = createMemoryStore(session);
+const PostgresSessionStore = connectPg(session);
+
+// Define the storage interface
+export interface IStorage {
+  // User operations
+  getUser(id: number): Promise<User | undefined>;
+  getUserByUsername(username: string): Promise<User | undefined>;
+  createUser(user: InsertUser): Promise<User>;
+  updateUser(id: number, user: Partial<InsertUser>): Promise<User | undefined>;
+  getUsers(filters?: Partial<User>): Promise<User[]>;
+  
+  // Event operations
+  getEvent(id: number): Promise<Event | undefined>;
+  createEvent(event: InsertEvent): Promise<Event>;
+  updateEvent(id: number, event: Partial<InsertEvent>): Promise<Event | undefined>;
+  getEvents(filters?: Partial<Event>): Promise<Event[]>;
+  
+  // Activity operations
+  createActivity(activity: InsertActivity): Promise<Activity>;
+  getActivities(limit?: number): Promise<Activity[]>;
+  
+  // Session store
+  sessionStore: session.Store;
+}
+
+// Database storage implementation
+export class DatabaseStorage implements IStorage {
+  sessionStore: session.Store;
+  
+  constructor() {
+    // Initialize memory store as the default
+    this.sessionStore = new MemoryStore({
+      checkPeriod: 86400000 // 24 hours (prune expired entries)
+    });
+    console.log('Initialized memory session store');
+    
+    // Try to connect to PostgreSQL in the background
+    this.initPostgresSessionStore();
+  }
+  
+  private async initPostgresSessionStore() {
+    try {
+      // Test the database connection first
+      await pool.query('SELECT 1');
+      
+      // If the connection is successful, try to use PostgreSQL session store
+      console.log('Database connection is working, switching to PostgreSQL session store...');
+      const pgStore = new PostgresSessionStore({
+        pool,
+        createTableIfMissing: true
+      });
+      
+      // Wait for the session table to be created
+      await new Promise<void>((resolve, reject) => {
+        setTimeout(() => {
+          this.sessionStore = pgStore;
+          console.log('Successfully switched to PostgreSQL session store');
+          resolve();
+        }, 2000); // Wait 2 seconds to ensure table creation is complete
+      });
+    } catch (error) {
+      console.error('Could not initialize PostgreSQL session store, keeping memory store:', 
+        error instanceof Error ? error.message : 'Unknown error');
+    }
+  }
+
+  // User methods
+  async getUser(id: number): Promise<User | undefined> {
+    try {
+      // Try with Drizzle ORM
+      const [user] = await db.select().from(users).where(eq(users.id, id));
+      return user;
+    } catch (error) {
+      console.error('Error retrieving user by ID with Drizzle:', error instanceof Error ? error.message : 'Unknown error');
+      
+      // If Drizzle fails, try with direct SQL query as fallback
+      try {
+        const client = await pool.connect();
+        try {
+          const result = await client.query('SELECT * FROM users WHERE id = $1', [id]);
+          if (result.rows.length === 0) {
+            return undefined;
+          }
+          
+          // Convert snake_case column names to camelCase
+          const userRecord = result.rows[0];
+          return {
+            id: userRecord.id,
+            username: userRecord.username,
+            email: userRecord.email,
+            password: userRecord.password,
+            name: userRecord.name,
+            role: userRecord.role,
+            status: userRecord.status,
+            bio: userRecord.bio,
+            phone: userRecord.phone,
+            avatar: userRecord.avatar,
+            cover: userRecord.cover,
+            website: userRecord.website,
+            isVerified: userRecord.is_verified,
+            location: userRecord.location,
+            createdAt: userRecord.created_at ? new Date(userRecord.created_at) : null,
+            updatedAt: userRecord.updated_at ? new Date(userRecord.updated_at) : null
+          } as User;
+        } finally {
+          client.release();
+        }
+      } catch (sqlError) {
+        console.error('Error retrieving user by ID with direct SQL:', 
+          sqlError instanceof Error ? sqlError.message : 'Unknown error');
+        
+        // If both methods fail, return undefined
+        return undefined;
+      }
+    }
+  }
+
+  async getUserByUsername(username: string): Promise<User | undefined> {
+    try {
+      // Try with Drizzle ORM
+      const [user] = await db.select().from(users).where(eq(users.username, username));
+      return user;
+    } catch (error) {
+      console.error('Error retrieving user by username with Drizzle:', 
+        error instanceof Error ? error.message : 'Unknown error');
+      
+      // If Drizzle fails, try with direct SQL query as fallback
+      try {
+        const client = await pool.connect();
+        try {
+          const result = await client.query('SELECT * FROM users WHERE username = $1', [username]);
+          if (result.rows.length === 0) {
+            return undefined;
+          }
+          
+          // Convert snake_case column names to camelCase
+          const userRecord = result.rows[0];
+          return {
+            id: userRecord.id,
+            username: userRecord.username,
+            email: userRecord.email,
+            password: userRecord.password,
+            name: userRecord.name,
+            role: userRecord.role,
+            status: userRecord.status,
+            bio: userRecord.bio,
+            phone: userRecord.phone,
+            avatar: userRecord.avatar,
+            cover: userRecord.cover,
+            website: userRecord.website,
+            isVerified: userRecord.is_verified,
+            location: userRecord.location,
+            createdAt: userRecord.created_at ? new Date(userRecord.created_at) : null,
+            updatedAt: userRecord.updated_at ? new Date(userRecord.updated_at) : null
+          } as User;
+        } finally {
+          client.release();
+        }
+      } catch (sqlError) {
+        console.error('Error retrieving user by username with direct SQL:', 
+          sqlError instanceof Error ? sqlError.message : 'Unknown error');
+        
+        // If both methods fail, return undefined
+        return undefined;
+      }
+    }
+  }
+
+  async createUser(insertUser: InsertUser): Promise<User> {
+    try {
+      // Always provide required fields with their default values
+      const userData = {
+        ...insertUser,
+        role: insertUser.role ?? 'customer',
+        status: insertUser.status ?? 'pending'
+      };
+      
+      const [user] = await db.insert(users).values(userData).returning();
+      return user;
+    } catch (error) {
+      console.error('Error creating user:', error instanceof Error ? error.message : 'Unknown error');
+      throw new Error('Failed to create user. Database connection error.');
+    }
+  }
+
+  async updateUser(id: number, userData: Partial<InsertUser>): Promise<User | undefined> {
+    try {
+      const [updatedUser] = await db
+        .update(users)
+        .set(userData)
+        .where(eq(users.id, id))
+        .returning();
+      return updatedUser;
+    } catch (error) {
+      console.error('Error updating user:', error instanceof Error ? error.message : 'Unknown error');
+      return undefined;
+    }
+  }
+
+  async getUsers(filters?: Partial<User>): Promise<User[]> {
+    try {
+      if (!filters || Object.keys(filters).length === 0) {
+        return await db.select().from(users);
+      }
+      
+      // Build conditions based on filters
+      const conditions: SQL[] = [];
+      
+      Object.entries(filters).forEach(([key, value]) => {
+        if (value !== undefined) {
+          const column = users[key as keyof typeof users];
+          if (column) {
+            conditions.push(eq(column as any, value));
+          }
+        }
+      });
+      
+      if (conditions.length === 0) {
+        return await db.select().from(users);
+      }
+      
+      return await db.select().from(users).where(and(...conditions));
+    } catch (error) {
+      console.error('Error getting users:', error instanceof Error ? error.message : 'Unknown error');
+      return [];
+    }
+  }
+
+  // Event methods
+  async getEvent(id: number): Promise<Event | undefined> {
+    try {
+      const [event] = await db.select().from(events).where(eq(events.id, id));
+      return event;
+    } catch (error) {
+      console.error('Error getting event by ID:', error instanceof Error ? error.message : 'Unknown error');
+      return undefined;
+    }
+  }
+
+  async createEvent(insertEvent: InsertEvent): Promise<Event> {
+    try {
+      // Execute direct SQL insert to avoid type conversion issues
+      const client = await pool.connect();
+      try {
+        // Process the insert data
+        const processedData = {
+          ...insertEvent,
+          status: insertEvent.status ?? 'pending'
+        };
+        
+        // Prepare column names and values for the SQL statement
+        const columns: string[] = [];
+        const placeholders: string[] = [];
+        const values: any[] = [];
+        let paramIndex = 1;
+        
+        // Create INSERT clause for the SQL statement
+        for (const [key, value] of Object.entries(processedData)) {
+          if (value !== undefined) {
+            // Convert camelCase to snake_case for SQL
+            const snakeKey = key.replace(/([A-Z])/g, '_$1').toLowerCase();
+            columns.push(snakeKey);
+            placeholders.push(`$${paramIndex}`);
+            
+            // Handle date fields for correct timestamp conversion
+            if (key === 'eventDate' || key === 'endDate') {
+              if (value instanceof Date) {
+                values.push(value);
+              } else if (typeof value === 'string') {
+                values.push(new Date(value));
+              } else {
+                values.push(null);
+              }
+            } else {
+              values.push(value);
+            }
+            
+            paramIndex++;
+          }
+        }
+        
+        // Add created_at and updated_at timestamps
+        const now = new Date();
+        columns.push('created_at');
+        placeholders.push(`$${paramIndex++}`);
+        values.push(now);
+        
+        columns.push('updated_at');
+        placeholders.push(`$${paramIndex++}`);
+        values.push(now);
+        
+        // Construct SQL query
+        const sql = `
+          INSERT INTO events (${columns.join(', ')}) 
+          VALUES (${placeholders.join(', ')})
+          RETURNING *
+        `;
+        
+        console.log('Executing insert SQL:', sql);
+        console.log('With parameters:', values);
+        
+        // Execute the insert query
+        const result = await client.query(sql, values);
+        
+        if (result.rows.length === 0) {
+          throw new Error('Failed to create event');
+        }
+        
+        // Convert snake_case to camelCase for frontend consumption
+        const eventRecord = result.rows[0];
+        const camelCaseEvent = Object.entries(eventRecord).reduce((acc, [key, value]) => {
+          // Convert snake_case to camelCase
+          const camelKey = key.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+          acc[camelKey] = value;
+          return acc;
+        }, {} as Record<string, any>);
+        
+        // Handle date fields
+        if (eventRecord.event_date) {
+          camelCaseEvent.eventDate = new Date(eventRecord.event_date);
+        }
+        
+        if (eventRecord.end_date) {
+          camelCaseEvent.endDate = new Date(eventRecord.end_date);
+        }
+        
+        if (eventRecord.created_at) {
+          camelCaseEvent.createdAt = new Date(eventRecord.created_at);
+        }
+        
+        if (eventRecord.updated_at) {
+          camelCaseEvent.updatedAt = new Date(eventRecord.updated_at);
+        }
+        
+        console.log('Created event:', camelCaseEvent);
+        return camelCaseEvent as Event;
+      } finally {
+        client.release();
+      }
+    } catch (error) {
+      console.error('Error creating event:', error instanceof Error ? error.message : 'Unknown error');
+      // Fail hard with an error
+      throw new Error('Failed to create event. Database connection error.');
+    }
+  }
+
+  async updateEvent(id: number, eventData: Partial<InsertEvent>): Promise<Event | undefined> {
+    // Execute direct SQL update to avoid type conversion issues
+    const client = await pool.connect();
+    try {
+      // Process date fields before updating
+      const processedData = { ...eventData };
+      
+      // Prepare column updates
+      const updates: string[] = [];
+      const values: any[] = [];
+      let paramIndex = 1;
+      
+      // Create SET clause for SQL statement
+      for (const [key, value] of Object.entries(processedData)) {
+        if (value !== undefined) {
+          // Convert camelCase to snake_case for SQL
+          const snakeKey = key.replace(/([A-Z])/g, '_$1').toLowerCase();
+          
+          // Handle date fields for correct timestamp conversion
+          if (key === 'eventDate' || key === 'endDate') {
+            if (value instanceof Date) {
+              updates.push(`${snakeKey} = $${paramIndex}`);
+              values.push(value);
+            } else if (typeof value === 'string') {
+              updates.push(`${snakeKey} = $${paramIndex}`);
+              values.push(new Date(value));
+            }
+          } else {
+            updates.push(`${snakeKey} = $${paramIndex}`);
+            values.push(value);
+          }
+          
+          paramIndex++;
+        }
+      }
+      
+      // Add updated_at timestamp
+      updates.push(`updated_at = $${paramIndex}`);
+      values.push(new Date());
+      
+      // Construct SQL query
+      const sql = `
+        UPDATE events 
+        SET ${updates.join(', ')} 
+        WHERE id = $${paramIndex + 1}
+        RETURNING *
+      `;
+      
+      // Add ID as the last parameter
+      values.push(id);
+      
+      console.log('Executing update SQL:', sql);
+      console.log('With parameters:', values);
+      
+      // Execute the update query
+      const result = await client.query(sql, values);
+      
+      if (result.rows.length === 0) {
+        return undefined;
+      }
+      
+      // Convert snake_case to camelCase for frontend consumption
+      const eventRecord = result.rows[0];
+      const camelCaseEvent = Object.entries(eventRecord).reduce((acc, [key, value]) => {
+        // Convert snake_case to camelCase
+        const camelKey = key.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+        acc[camelKey] = value;
+        return acc;
+      }, {} as Record<string, any>);
+      
+      // Handle date fields
+      if (eventRecord.event_date) {
+        camelCaseEvent.eventDate = new Date(eventRecord.event_date);
+      }
+      
+      if (eventRecord.end_date) {
+        camelCaseEvent.endDate = new Date(eventRecord.end_date);
+      }
+      
+      if (eventRecord.created_at) {
+        camelCaseEvent.createdAt = new Date(eventRecord.created_at);
+      }
+      
+      if (eventRecord.updated_at) {
+        camelCaseEvent.updatedAt = new Date(eventRecord.updated_at);
+      }
+      
+      console.log('Updated event:', camelCaseEvent);
+      return camelCaseEvent as Event;
+    } finally {
+      client.release();
+    }
+  }
+
+  async getEvents(filters?: Partial<Event>): Promise<Event[]> {
+    try {
+      // Using direct SQL query to avoid enum issues
+      const client = await pool.connect();
+      try {
+        let sql = `SELECT * FROM events`;
+        const params: any[] = [];
+        let paramIndex = 1;
+        
+        if (filters && Object.keys(filters).length > 0) {
+          const conditions: string[] = [];
+          
+          for (const [key, value] of Object.entries(filters)) {
+            if (value !== undefined) {
+              // Convert camelCase keys to snake_case for SQL
+              const snakeCaseKey = key.replace(/([A-Z])/g, '_$1').toLowerCase();
+              
+              // Check if we're trying to filter on status with array values
+              if (key === 'status' && Array.isArray(value)) {
+                const statusParams = value.map((_, i) => `$${paramIndex + i}`).join(', ');
+                conditions.push(`${snakeCaseKey} IN (${statusParams})`);
+                params.push(...value);
+                paramIndex += value.length;
+              } else {
+                conditions.push(`${snakeCaseKey} = $${paramIndex}`);
+                params.push(value);
+                paramIndex++;
+              }
+            }
+          }
+          
+          if (conditions.length > 0) {
+            sql += ` WHERE ${conditions.join(' AND ')}`;
+          }
+        }
+        
+        console.log('Executing SQL query:', sql, 'with params:', params);
+        const result = await client.query(sql, params);
+        
+        // Process date fields in the results
+        const processedEvents = result.rows.map(event => {
+          // Convert snake_case to camelCase for the entire object
+          const camelCaseEvent = Object.entries(event).reduce((acc, [key, value]) => {
+            // Convert snake_case to camelCase
+            const camelKey = key.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+            acc[camelKey] = value;
+            return acc;
+          }, {} as Record<string, any>);
+          
+          // Explicitly handle date fields
+          if (event.event_date) {
+            camelCaseEvent.eventDate = new Date(event.event_date);
+          }
+          
+          if (event.end_date) {
+            camelCaseEvent.endDate = new Date(event.end_date);
+          }
+          
+          return camelCaseEvent;
+        });
+        
+        console.log('Processed events from DB:', processedEvents);
+        return processedEvents as Event[];
+      } finally {
+        client.release();
+      }
+    } catch (error) {
+      console.error('Error retrieving events:', error instanceof Error ? error.message : 'Unknown error');
+      console.error('Database connection is required for application functionality');
+      
+      // Return empty array rather than mock data
+      return [];
+    }
+  }
+
+  // Activity methods
+  async createActivity(insertActivity: InsertActivity): Promise<Activity> {
+    try {
+      const client = await pool.connect();
+      try {
+        // Get the max ID to ensure we generate a unique one
+        const maxIdResult = await client.query('SELECT MAX(id) FROM activities');
+        const maxId = maxIdResult.rows[0].max || 0;
+        const newId = maxId + 1;
+        
+        // Prepare column names and values for the SQL statement
+        const columns = ['id'];
+        const placeholders = ['$1'];
+        const values = [newId];
+        let paramIndex = 2;
+        
+        // Add activity fields
+        if (insertActivity.userId !== undefined) {
+          columns.push('user_id');
+          placeholders.push(`$${paramIndex++}`);
+          values.push(insertActivity.userId);
+        }
+        
+        columns.push('activity_type');
+        placeholders.push(`$${paramIndex++}`);
+        values.push(insertActivity.activityType);
+        
+        columns.push('description');
+        placeholders.push(`$${paramIndex++}`);
+        values.push(insertActivity.description);
+        
+        if (insertActivity.entityId !== undefined) {
+          columns.push('entity_id');
+          placeholders.push(`$${paramIndex++}`);
+          values.push(insertActivity.entityId);
+        }
+        
+        if (insertActivity.entityType !== undefined) {
+          columns.push('entity_type');
+          placeholders.push(`$${paramIndex++}`);
+          values.push(insertActivity.entityType);
+        }
+        
+        if (insertActivity.data !== undefined) {
+          columns.push('data');
+          placeholders.push(`$${paramIndex++}`);
+          values.push(insertActivity.data);
+        }
+        
+        // Add created_at timestamp
+        columns.push('created_at');
+        placeholders.push(`$${paramIndex++}`);
+        values.push(new Date());
+        
+        // Construct SQL query
+        const sql = `
+          INSERT INTO activities (${columns.join(', ')}) 
+          VALUES (${placeholders.join(', ')})
+          RETURNING *
+        `;
+        
+        // Execute the query
+        const result = await client.query(sql, values);
+        
+        if (result.rows.length === 0) {
+          throw new Error('Failed to create activity');
+        }
+        
+        // Convert snake_case to camelCase for frontend consumption
+        const activityRecord = result.rows[0];
+        const camelCaseActivity = Object.entries(activityRecord).reduce((acc, [key, value]) => {
+          // Convert snake_case to camelCase
+          const camelKey = key.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+          acc[camelKey] = value;
+          return acc;
+        }, {} as Record<string, any>);
+        
+        // Handle date fields
+        if (activityRecord.created_at) {
+          camelCaseActivity.createdAt = new Date(activityRecord.created_at);
+        }
+        
+        return camelCaseActivity as Activity;
+      } finally {
+        client.release();
+      }
+    } catch (error) {
+      console.error('Error creating activity:', error);
+      // Fail with an error for activity creation
+      throw new Error('Failed to create activity log. Database connection error.');
+    }
+  }
+
+  async getActivities(limit?: number): Promise<Activity[]> {
+    // Using direct SQL query to avoid TypeScript errors
+    const client = await pool.connect();
+    try {
+      const sql = limit && limit > 0
+        ? `SELECT * FROM activities ORDER BY created_at DESC LIMIT $1`
+        : `SELECT * FROM activities ORDER BY created_at DESC`;
+        
+      const params = limit && limit > 0 ? [limit] : [];
+      const result = await client.query(sql, params);
+      return result.rows;
+    } finally {
+      client.release();
+    }
+  }
+}
+
+// Export database storage instance
+export const storage = new DatabaseStorage();

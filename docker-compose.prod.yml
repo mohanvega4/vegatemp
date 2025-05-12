@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - NODE_ENV=production
+    container_name: vegashow_app
+    ports:
+      - "5000:5000"
+    env_file:
+      - environments/.prod.env
+    environment:
+      - PORT=5000
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
+      - node_modules:/app/node_modules
+    networks:
+      - vega_network
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:5000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+    command: sh -c "npm run start"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.vegashow.rule=Host(`vegashow.ai`) || Host(`www.vegashow.ai`)"
+      - "traefik.http.routers.vegashow.entrypoints=websecure"
+      - "traefik.http.routers.vegashow.tls=true"
+      - "traefik.http.services.vegashow.loadbalancer.server.port=5000"
+
+  traefik:
+    image: traefik:v2.10
+    container_name: traefik
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./traefik/acme.json:/acme.json
+      - ./traefik/traefik.yml:/traefik.yml
+    networks:
+      - vega_network
+    restart: unless-stopped
+
+networks:
+  vega_network:
+    driver: bridge
+
+volumes:
+  node_modules:

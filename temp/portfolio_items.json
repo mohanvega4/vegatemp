@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "provider_id": 9,
+    "service_id": 1,
+    "type": "video",
+    "title": "Club Electro Night Mix",
+    "description": "Highlights from my recent performance at Club Electro featuring electronic dance music.",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  },
+  {
+    "id": 2,
+    "provider_id": 9,
+    "service_id": 2,
+    "type": "image",
+    "title": "Smith-Johnson Wedding",
+    "description": "Photos from the Smith-Johnson wedding where I provided DJ services for the reception.",
+    "url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  },
+  {
+    "id": 3,
+    "provider_id": 9,
+    "service_id": 3,
+    "type": "link",
+    "title": "Tech Conference Afterparty",
+    "description": "Link to event page featuring my work at the annual Tech Conference afterparty.",
+    "url": "https://example.com/dj-beats-tech-conference",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  },
+  {
+    "id": 4,
+    "provider_id": 10,
+    "service_id": 4,
+    "type": "image",
+    "title": "Corporate Gala Event",
+    "description": "Photography from the annual corporate gala featuring executive portraits and event coverage.",
+    "url": "https://images.unsplash.com/photo-1531058020387-3be344556be6?q=80&w=2070&auto=format&fit=crop",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  },
+  {
+    "id": 5,
+    "provider_id": 10,
+    "service_id": 5,
+    "type": "image",
+    "title": "Martinez Wedding Collection",
+    "description": "Sample images from the Martinez wedding, showcasing candid moments and formal portraits.",
+    "url": "https://images.unsplash.com/photo-1537907510278-a4a904311338?q=80&w=2070&auto=format&fit=crop",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  },
+  {
+    "id": 6,
+    "provider_id": 10,
+    "service_id": 6,
+    "type": "image",
+    "title": "Executive Portrait Series",
+    "description": "Professional headshots for C-level executives at Johnson Financial.",
+    "url": "https://images.unsplash.com/photo-1556157382-97eda2f9e2bf?q=80&w=2070&auto=format&fit=crop",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  },
+  {
+    "id": 7,
+    "provider_id": 10,
+    "service_id": 4,
+    "type": "video",
+    "title": "Event Photography Behind the Scenes",
+    "description": "A look at my event photography process and equipment setup.",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  },
+  {
+    "id": 8,
+    "provider_id": 11,
+    "service_id": 7,
+    "type": "video",
+    "title": "Festival Performance Highlights",
+    "description": "Highlights from our main stage performance at Summer Music Festival 2024.",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  },
+  {
+    "id": 9,
+    "provider_id": 11,
+    "service_id": 8,
+    "type": "image",
+    "title": "Corporate Team Building Workshop",
+    "description": "Photos from our recent workshop for ABC Corporation team building event.",
+    "url": "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?q=80&w=2070&auto=format&fit=crop",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  },
+  {
+    "id": 10,
+    "provider_id": 11,
+    "service_id": 9,
+    "type": "video",
+    "title": "Music Video Choreography Sample",
+    "description": "Behind-the-scenes look at our choreography process for a recent music video.",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  },
+  {
+    "id": 11,
+    "provider_id": 11,
+    "service_id": 7,
+    "type": "image",
+    "title": "Private Event Performance",
+    "description": "Performance at a luxury private event featuring our signature choreography.",
+    "url": "https://images.unsplash.com/photo-1495810890-a56f13cbf508?q=80&w=1975&auto=format&fit=crop",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  },
+  {
+    "id": 12,
+    "provider_id": 12,
+    "service_id": 10,
+    "type": "image",
+    "title": "Close-up Magic Gallery",
+    "description": "Photos showcasing close-up magic performances at corporate events.",
+    "url": "https://images.unsplash.com/photo-1543493251-f31d2ea9f7a6?q=80&w=2070&auto=format&fit=crop",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  },
+  {
+    "id": 13,
+    "provider_id": 12,
+    "service_id": 11,
+    "type": "video",
+    "title": "Grand Illusion Show Highlights",
+    "description": "Video highlights from our most popular grand illusion stage show.",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  },
+  {
+    "id": 14,
+    "provider_id": 12,
+    "service_id": 12,
+    "type": "image",
+    "title": "Children Birthday Magic Show",
+    "description": "Photos from a recent children birthday party featuring interactive magic tricks.",
+    "url": "https://images.unsplash.com/photo-1558470598-a5dda9640f68?q=80&w=2071&auto=format&fit=crop",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  },
+  {
+    "id": 15,
+    "provider_id": 12,
+    "service_id": 11,
+    "type": "link",
+    "title": "Magic Convention Performance",
+    "description": "Link to featured performance at the International Magic Convention.",
+    "url": "https://example.com/mystic-wonder-convention",
+    "is_approved": true,
+    "created_at": "2025-04-28T18:09:29.912Z"
+  }
+]

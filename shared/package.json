@@ -1,0 +1,19 @@
+{
+  "name": "@vega-show/shared",
+  "version": "1.0.0",
+  "description": "Shared code for Vega Show",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.28.6",
+    "drizzle-zod": "^0.5.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}

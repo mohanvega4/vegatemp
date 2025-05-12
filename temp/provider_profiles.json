@@ -1,0 +1,88 @@
+[
+  {
+    "id": 2,
+    "user_id": 10,
+    "is_group": false,
+    "group_name": null,
+    "team_size": null,
+    "contact_name": "Sarah Chen",
+    "contact_phone": "+1-555-987-6543",
+    "current_residence": "Toronto, Canada",
+    "languages": [
+      "English",
+      "French",
+      "Mandarin"
+    ],
+    "view_count": 278,
+    "rating": 4.9,
+    "review_count": 45,
+    "verified": true,
+    "featured_provider": false,
+    "created_at": "2025-04-28T18:07:25.306Z",
+    "updated_at": "2025-04-28T18:07:25.306Z"
+  },
+  {
+    "id": 4,
+    "user_id": 12,
+    "is_group": true,
+    "group_name": "Mystic Wonder Productions",
+    "team_size": 3,
+    "contact_name": "Elizabeth Taylor",
+    "contact_phone": "+1-555-876-5432",
+    "current_residence": "London, UK",
+    "languages": [
+      "English",
+      "French"
+    ],
+    "view_count": 310,
+    "rating": 4.6,
+    "review_count": 22,
+    "verified": true,
+    "featured_provider": false,
+    "created_at": "2025-04-28T18:07:25.306Z",
+    "updated_at": "2025-04-28T18:07:25.306Z"
+  },
+  {
+    "id": 1,
+    "user_id": 9,
+    "is_group": false,
+    "group_name": "",
+    "team_size": null,
+    "contact_name": "DJ Maestro",
+    "contact_phone": "+1-555-123-4567",
+    "current_residence": "Los Angeles, United States",
+    "languages": [
+      "English",
+      "Japanese"
+    ],
+    "view_count": 352,
+    "rating": 4.8,
+    "review_count": 27,
+    "verified": false,
+    "featured_provider": false,
+    "created_at": "2025-04-28T18:07:25.306Z",
+    "updated_at": "2025-04-28T23:40:19.044Z"
+  },
+  {
+    "id": 3,
+    "user_id": 11,
+    "is_group": false,
+    "group_name": "",
+    "team_size": 6,
+    "contact_name": "Rhythm Squad",
+    "contact_phone": "+1-555-234-5678",
+    "current_residence": "Sydney, Australia",
+    "languages": [
+      "English",
+      "Spanish",
+      "French"
+    ],
+    "view_count": 456,
+    "rating": 4.7,
+    "review_count": 38,
+    "verified": false,
+    "featured_provider": false,
+    "created_at": "2025-04-28T18:07:25.306Z",
+    "updated_at": "2025-04-28T23:55:59.235Z"
+  }
+]

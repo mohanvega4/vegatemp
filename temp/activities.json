@@ -1,0 +1,2618 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T12:39:57.052Z",
+    "data": null
+  },
+  {
+    "id": 2,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T12:44:44.192Z",
+    "data": null
+  },
+  {
+    "id": 3,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T12:45:04.097Z",
+    "data": null
+  },
+  {
+    "id": 4,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T12:45:16.156Z",
+    "data": null
+  },
+  {
+    "id": 5,
+    "user_id": 2,
+    "activity_type": "registration",
+    "description": "New customer registered: Zilal",
+    "entity_id": 2,
+    "entity_type": "user",
+    "created_at": "2025-04-28T12:46:03.977Z",
+    "data": null
+  },
+  {
+    "id": 6,
+    "user_id": 2,
+    "activity_type": "login",
+    "description": "User logged in: Zilal",
+    "entity_id": 2,
+    "entity_type": "user",
+    "created_at": "2025-04-28T12:47:29.480Z",
+    "data": null
+  },
+  {
+    "id": 7,
+    "user_id": 2,
+    "activity_type": "logout",
+    "description": "User logged out: Zilal",
+    "entity_id": 2,
+    "entity_type": "user",
+    "created_at": "2025-04-28T12:47:52.538Z",
+    "data": null
+  },
+  {
+    "id": 8,
+    "user_id": 2,
+    "activity_type": "login",
+    "description": "User logged in: Zilal",
+    "entity_id": 2,
+    "entity_type": "user",
+    "created_at": "2025-04-28T12:58:36.094Z",
+    "data": null
+  },
+  {
+    "id": 9,
+    "user_id": 2,
+    "activity_type": "logout",
+    "description": "User logged out: Zilal",
+    "entity_id": 2,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:12:06.699Z",
+    "data": null
+  },
+  {
+    "id": 10,
+    "user_id": 2,
+    "activity_type": "logout",
+    "description": "User logged out: Zilal",
+    "entity_id": 2,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:12:06.699Z",
+    "data": null
+  },
+  {
+    "id": 11,
+    "user_id": 3,
+    "activity_type": "registration",
+    "description": "New provider registered: Deva",
+    "entity_id": 3,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:13:10.508Z",
+    "data": null
+  },
+  {
+    "id": 12,
+    "user_id": 3,
+    "activity_type": "login",
+    "description": "User logged in: Deva",
+    "entity_id": 3,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:15:26.139Z",
+    "data": null
+  },
+  {
+    "id": 13,
+    "user_id": 3,
+    "activity_type": "logout",
+    "description": "User logged out: Deva",
+    "entity_id": 3,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:15:37.118Z",
+    "data": null
+  },
+  {
+    "id": 14,
+    "user_id": 4,
+    "activity_type": "registration",
+    "description": "New provider registered: John Doe",
+    "entity_id": 4,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:25:38.174Z",
+    "data": null
+  },
+  {
+    "id": 15,
+    "user_id": 5,
+    "activity_type": "registration",
+    "description": "New provider registered: Talent User",
+    "entity_id": 5,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:26:27.156Z",
+    "data": null
+  },
+  {
+    "id": 16,
+    "user_id": 5,
+    "activity_type": "login",
+    "description": "User logged in: Talent User",
+    "entity_id": 5,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:26:54.320Z",
+    "data": null
+  },
+  {
+    "id": 17,
+    "user_id": 3,
+    "activity_type": "login",
+    "description": "User logged in: Deva",
+    "entity_id": 3,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:29:58.522Z",
+    "data": null
+  },
+  {
+    "id": 18,
+    "user_id": 3,
+    "activity_type": "logout",
+    "description": "User logged out: Deva",
+    "entity_id": 3,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:30:14.393Z",
+    "data": null
+  },
+  {
+    "id": 19,
+    "user_id": 5,
+    "activity_type": "login",
+    "description": "User logged in: Talent User",
+    "entity_id": 5,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:30:32.462Z",
+    "data": null
+  },
+  {
+    "id": 20,
+    "user_id": 5,
+    "activity_type": "logout",
+    "description": "User logged out: Talent User",
+    "entity_id": 5,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:31:04.556Z",
+    "data": null
+  },
+  {
+    "id": 21,
+    "user_id": 3,
+    "activity_type": "review_submitted",
+    "description": "Activity of type review_submitted performed by user 3",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-22T13:43:48.764Z",
+    "data": null
+  },
+  {
+    "id": 22,
+    "user_id": 7,
+    "activity_type": "payment_completed",
+    "description": "Activity of type payment_completed performed by user 7",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-28T13:43:48.791Z",
+    "data": null
+  },
+  {
+    "id": 23,
+    "user_id": 12,
+    "activity_type": "payment_completed",
+    "description": "Activity of type payment_completed performed by user 12",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-09T13:43:48.813Z",
+    "data": null
+  },
+  {
+    "id": 24,
+    "user_id": 6,
+    "activity_type": "user_registration",
+    "description": "Activity of type user_registration performed by user 6",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-08T13:43:48.833Z",
+    "data": null
+  },
+  {
+    "id": 25,
+    "user_id": 7,
+    "activity_type": "payment_completed",
+    "description": "Activity of type payment_completed performed by user 7",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-07T13:43:48.853Z",
+    "data": null
+  },
+  {
+    "id": 26,
+    "user_id": 5,
+    "activity_type": "booking_confirmed",
+    "description": "Activity of type booking_confirmed performed by user 5",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-02T13:43:48.873Z",
+    "data": null
+  },
+  {
+    "id": 27,
+    "user_id": 8,
+    "activity_type": "event_created",
+    "description": "Activity of type event_created performed by user 8",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-01T13:43:48.895Z",
+    "data": null
+  },
+  {
+    "id": 28,
+    "user_id": 4,
+    "activity_type": "review_submitted",
+    "description": "Activity of type review_submitted performed by user 4",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-24T13:43:48.915Z",
+    "data": null
+  },
+  {
+    "id": 29,
+    "user_id": 6,
+    "activity_type": "booking_confirmed",
+    "description": "Activity of type booking_confirmed performed by user 6",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-07T13:43:48.935Z",
+    "data": null
+  },
+  {
+    "id": 30,
+    "user_id": 8,
+    "activity_type": "booking_confirmed",
+    "description": "Activity of type booking_confirmed performed by user 8",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-07T13:43:48.955Z",
+    "data": null
+  },
+  {
+    "id": 31,
+    "user_id": 8,
+    "activity_type": "event_created",
+    "description": "Activity of type event_created performed by user 8",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-03-31T13:43:48.975Z",
+    "data": null
+  },
+  {
+    "id": 32,
+    "user_id": 6,
+    "activity_type": "booking_confirmed",
+    "description": "Activity of type booking_confirmed performed by user 6",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-06T13:43:48.994Z",
+    "data": null
+  },
+  {
+    "id": 33,
+    "user_id": 11,
+    "activity_type": "event_created",
+    "description": "Activity of type event_created performed by user 11",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-14T13:43:49.014Z",
+    "data": null
+  },
+  {
+    "id": 34,
+    "user_id": 4,
+    "activity_type": "payment_completed",
+    "description": "Activity of type payment_completed performed by user 4",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-03-31T13:43:49.034Z",
+    "data": null
+  },
+  {
+    "id": 35,
+    "user_id": 8,
+    "activity_type": "review_submitted",
+    "description": "Activity of type review_submitted performed by user 8",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-02T13:43:49.054Z",
+    "data": null
+  },
+  {
+    "id": 36,
+    "user_id": 8,
+    "activity_type": "message_sent",
+    "description": "Activity of type message_sent performed by user 8",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-25T13:43:49.074Z",
+    "data": null
+  },
+  {
+    "id": 37,
+    "user_id": 7,
+    "activity_type": "booking_confirmed",
+    "description": "Activity of type booking_confirmed performed by user 7",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-07T13:43:49.094Z",
+    "data": null
+  },
+  {
+    "id": 38,
+    "user_id": 3,
+    "activity_type": "payment_completed",
+    "description": "Activity of type payment_completed performed by user 3",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-11T13:43:49.114Z",
+    "data": null
+  },
+  {
+    "id": 39,
+    "user_id": 3,
+    "activity_type": "event_created",
+    "description": "Activity of type event_created performed by user 3",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-28T13:43:49.134Z",
+    "data": null
+  },
+  {
+    "id": 40,
+    "user_id": 9,
+    "activity_type": "payment_completed",
+    "description": "Activity of type payment_completed performed by user 9",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-23T13:43:49.154Z",
+    "data": null
+  },
+  {
+    "id": 41,
+    "user_id": 2,
+    "activity_type": "booking",
+    "description": "Booking between customer 2 and talent 3 for event 1",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-18T13:43:49.177Z",
+    "data": {
+      "fee": 2500,
+      "date": "2025-04-18T13:43:49.177Z",
+      "notes": "Please arrive 1 hour before the event for setup",
+      "status": "confirmed",
+      "eventId": 1,
+      "talentId": 3,
+      "customerId": 2
+    }
+  },
+  {
+    "id": 42,
+    "user_id": 6,
+    "activity_type": "booking",
+    "description": "Booking between customer 6 and talent 4 for event 2",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-23T13:43:49.177Z",
+    "data": {
+      "fee": 1800,
+      "date": "2025-04-23T13:43:49.177Z",
+      "notes": "Need to discuss equipment requirements",
+      "status": "pending",
+      "eventId": 2,
+      "talentId": 4,
+      "customerId": 6
+    }
+  },
+  {
+    "id": 43,
+    "user_id": 7,
+    "activity_type": "booking",
+    "description": "Booking between customer 7 and talent 5 for event 3",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-25T13:43:49.177Z",
+    "data": {
+      "fee": 3200,
+      "date": "2025-04-25T13:43:49.177Z",
+      "notes": "Full day coverage with edited photos within 2 weeks",
+      "status": "confirmed",
+      "eventId": 3,
+      "talentId": 5,
+      "customerId": 7
+    }
+  },
+  {
+    "id": 44,
+    "user_id": 9,
+    "activity_type": "service",
+    "description": "Party DJ Service: High-energy DJ service for parties and nightclubs with state-of-the-art equipment and lighting.",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-28T13:43:59.473Z",
+    "data": {
+      "title": "Party DJ Service",
+      "category": "DJs",
+      "basePrice": 500,
+      "description": "High-energy DJ service for parties and nightclubs with state-of-the-art equipment and lighting.",
+      "isAvailable": true,
+      "subcategory": "Party"
+    }
+  },
+  {
+    "id": 45,
+    "user_id": 9,
+    "activity_type": "service",
+    "description": "Wedding DJ & MC Package: Full-service DJ and MC for wedding receptions, including ceremony music, dinner ambiance, and dance sets.",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-28T13:43:59.504Z",
+    "data": {
+      "title": "Wedding DJ & MC Package",
+      "category": "DJs",
+      "basePrice": 800,
+      "description": "Full-service DJ and MC for wedding receptions, including ceremony music, dinner ambiance, and dance sets.",
+      "isAvailable": true,
+      "subcategory": "Wedding"
+    }
+  },
+  {
+    "id": 46,
+    "user_id": 10,
+    "activity_type": "service",
+    "description": "Event Photography: Professional event photography with quick turnaround and online gallery delivery.",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-28T13:43:59.550Z",
+    "data": {
+      "title": "Event Photography",
+      "category": "Photography",
+      "basePrice": 650,
+      "description": "Professional event photography with quick turnaround and online gallery delivery.",
+      "isAvailable": true,
+      "subcategory": "Event"
+    }
+  },
+  {
+    "id": 47,
+    "user_id": 10,
+    "activity_type": "service",
+    "description": "Professional Portraits: Studio-quality portraits for individuals or groups with professional editing and retouching.",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-28T13:43:59.572Z",
+    "data": {
+      "title": "Professional Portraits",
+      "category": "Photography",
+      "basePrice": 300,
+      "description": "Studio-quality portraits for individuals or groups with professional editing and retouching.",
+      "isAvailable": true,
+      "subcategory": "Portrait"
+    }
+  },
+  {
+    "id": 48,
+    "user_id": 11,
+    "activity_type": "service",
+    "description": "Contemporary Dance Performance: A team of 6 professional dancers performing contemporary choreography for special events.",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-28T13:43:59.616Z",
+    "data": {
+      "title": "Contemporary Dance Performance",
+      "category": "Dancers",
+      "basePrice": 1200,
+      "description": "A team of 6 professional dancers performing contemporary choreography for special events.",
+      "isAvailable": true,
+      "subcategory": "Modern"
+    }
+  },
+  {
+    "id": 49,
+    "user_id": 11,
+    "activity_type": "service",
+    "description": "Breakdance Show: High-energy breakdance performance with interactive audience elements.",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-28T13:43:59.640Z",
+    "data": {
+      "title": "Breakdance Show",
+      "category": "Dancers",
+      "basePrice": 800,
+      "description": "High-energy breakdance performance with interactive audience elements.",
+      "isAvailable": true,
+      "subcategory": "Break"
+    }
+  },
+  {
+    "id": 50,
+    "user_id": 12,
+    "activity_type": "service",
+    "description": "Stage Illusion Show: Full stage magic show with grand illusions and audience participation.",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-28T13:43:59.690Z",
+    "data": {
+      "title": "Stage Illusion Show",
+      "category": "Magicians",
+      "basePrice": 1500,
+      "description": "Full stage magic show with grand illusions and audience participation.",
+      "isAvailable": true,
+      "subcategory": "Stage"
+    }
+  },
+  {
+    "id": 51,
+    "user_id": 12,
+    "activity_type": "service",
+    "description": "Close-up Magic: Intimate close-up magic perfect for cocktail hours and small gatherings.",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-28T13:43:59.715Z",
+    "data": {
+      "title": "Close-up Magic",
+      "category": "Magicians",
+      "basePrice": 400,
+      "description": "Intimate close-up magic perfect for cocktail hours and small gatherings.",
+      "isAvailable": true,
+      "subcategory": "Close-up"
+    }
+  },
+  {
+    "id": 52,
+    "user_id": 9,
+    "activity_type": "portfolio",
+    "description": "Portfolio for dj_beats",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-28T13:43:59.765Z",
+    "data": {
+      "bio": "Professional DJ with over 10 years of experience in clubs, weddings, and corporate events. Known for reading the crowd and creating the perfect atmosphere.",
+      "images": [
+        "https://images.unsplash.com/photo-1605723517503-3cadb5818a0c",
+        "https://images.unsplash.com/photo-1571266028027-31b042d898f4"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=example1",
+        "https://vimeo.com/example1"
+      ],
+      "languages": [
+        "English",
+        "Spanish"
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "user_id": 10,
+    "activity_type": "portfolio",
+    "description": "Portfolio for photo_pro",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-28T13:43:59.809Z",
+    "data": {
+      "bio": "Award-winning photographer specializing in event, portrait, and commercial photography. Each image tells a unique story with attention to detail and creative composition.",
+      "images": [
+        "https://images.unsplash.com/photo-1542038784456-1ea8e935640e",
+        "https://images.unsplash.com/photo-1551737823-bfbab5b92265"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=example2",
+        "https://vimeo.com/example2"
+      ],
+      "languages": [
+        "English",
+        "French"
+      ]
+    }
+  },
+  {
+    "id": 54,
+    "user_id": 11,
+    "activity_type": "portfolio",
+    "description": "Portfolio for dance_crew",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-28T13:43:59.855Z",
+    "data": {
+      "bio": "Dynamic dance crew performing various styles including contemporary, hip-hop, and breakdance. Available for events, music videos, and live performances.",
+      "images": [
+        "https://images.unsplash.com/photo-1535525153412-5a42439a210d",
+        "https://images.unsplash.com/photo-1544442069-bdea78aa887d"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=example3",
+        "https://vimeo.com/example3"
+      ],
+      "languages": [
+        "English",
+        "Arabic"
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "user_id": 12,
+    "activity_type": "portfolio",
+    "description": "Portfolio for magic_show",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-28T13:43:59.900Z",
+    "data": {
+      "bio": "Captivating magician performing mind-boggling illusions and sleight of hand magic. Perfect for corporate events, private parties, and stage shows.",
+      "images": [
+        "https://images.unsplash.com/photo-1572385856637-aac1da39126a",
+        "https://images.unsplash.com/photo-1542723300-4c7c3fcd0305"
+      ],
+      "videos": [
+        "https://www.youtube.com/watch?v=example4",
+        "https://vimeo.com/example4"
+      ],
+      "languages": [
+        "English",
+        "Hindi"
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "user_id": 9,
+    "activity_type": "review",
+    "description": "Review for dj_beats: 5/5 stars",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-03-29T13:43:59.244Z",
+    "data": {
+      "date": "2025-03-29T13:43:59.244Z",
+      "rating": 5,
+      "comment": "DJ Maestro was incredible! He kept the dance floor packed all night at our wedding reception.",
+      "customerId": 8,
+      "customerName": "Sarah Johnson"
+    }
+  },
+  {
+    "id": 57,
+    "user_id": 9,
+    "activity_type": "review",
+    "description": "Review for dj_beats: 4/5 stars",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-13T13:43:59.244Z",
+    "data": {
+      "date": "2025-04-13T13:43:59.244Z",
+      "rating": 4,
+      "comment": "Great music selection and professional setup. Would recommend for any corporate event.",
+      "customerId": 6,
+      "customerName": "Michael Chen"
+    }
+  },
+  {
+    "id": 58,
+    "user_id": 10,
+    "activity_type": "review",
+    "description": "Review for photo_pro: 5/5 stars",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-08T13:43:59.244Z",
+    "data": {
+      "date": "2025-04-08T13:43:59.244Z",
+      "rating": 5,
+      "comment": "Lens Master captured our event beautifully. The attention to detail was exceptional.",
+      "customerId": 7,
+      "customerName": "Emily Rodriguez"
+    }
+  },
+  {
+    "id": 59,
+    "user_id": 11,
+    "activity_type": "review",
+    "description": "Review for dance_crew: 5/5 stars",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-18T13:43:59.244Z",
+    "data": {
+      "date": "2025-04-18T13:43:59.244Z",
+      "rating": 5,
+      "comment": "Rhythm Squad brought incredible energy to our product launch. Everyone was amazed!",
+      "customerId": 2,
+      "customerName": "Sarah Johnson"
+    }
+  },
+  {
+    "id": 60,
+    "user_id": 12,
+    "activity_type": "review",
+    "description": "Review for magic_show: 5/5 stars",
+    "entity_id": null,
+    "entity_type": null,
+    "created_at": "2025-04-23T13:43:59.244Z",
+    "data": {
+      "date": "2025-04-23T13:43:59.244Z",
+      "rating": 5,
+      "comment": "Mystic Wonder had our guests completely mesmerized. A perfect addition to our corporate gala.",
+      "customerId": 6,
+      "customerName": "Michael Chen"
+    }
+  },
+  {
+    "id": 61,
+    "user_id": 6,
+    "activity_type": "login",
+    "description": "User logged in: Sarah Johnson",
+    "entity_id": 6,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:45:04.942Z",
+    "data": null
+  },
+  {
+    "id": 62,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:45:12.554Z",
+    "data": null
+  },
+  {
+    "id": 63,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T13:45:18.964Z",
+    "data": null
+  },
+  {
+    "id": 64,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T14:43:20.063Z",
+    "data": null
+  },
+  {
+    "id": 65,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T15:01:43.913Z",
+    "data": null
+  },
+  {
+    "id": 66,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T15:02:06.550Z",
+    "data": null
+  },
+  {
+    "id": 67,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T15:05:42.223Z",
+    "data": null
+  },
+  {
+    "id": 68,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T15:06:07.884Z",
+    "data": null
+  },
+  {
+    "id": 69,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T15:06:39.999Z",
+    "data": null
+  },
+  {
+    "id": 70,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T15:08:46.508Z",
+    "data": null
+  },
+  {
+    "id": 71,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T15:12:25.398Z",
+    "data": null
+  },
+  {
+    "id": 72,
+    "user_id": 3,
+    "activity_type": "login",
+    "description": "User logged in: Deva",
+    "entity_id": 3,
+    "entity_type": "user",
+    "created_at": "2025-04-28T15:12:36.957Z",
+    "data": null
+  },
+  {
+    "id": 73,
+    "user_id": 3,
+    "activity_type": "logout",
+    "description": "User logged out: Deva",
+    "entity_id": 3,
+    "entity_type": "user",
+    "created_at": "2025-04-28T15:14:12.583Z",
+    "data": null
+  },
+  {
+    "id": 74,
+    "user_id": 2,
+    "activity_type": "login",
+    "description": "User logged in: Zilal",
+    "entity_id": 2,
+    "entity_type": "user",
+    "created_at": "2025-04-28T15:14:28.692Z",
+    "data": null
+  },
+  {
+    "id": 75,
+    "user_id": 2,
+    "activity_type": "logout",
+    "description": "User logged out: Zilal",
+    "entity_id": 2,
+    "entity_type": "user",
+    "created_at": "2025-04-28T15:14:42.662Z",
+    "data": null
+  },
+  {
+    "id": 76,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T15:28:06.278Z",
+    "data": null
+  },
+  {
+    "id": 77,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T15:29:16.378Z",
+    "data": null
+  },
+  {
+    "id": 78,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T16:17:11.356Z",
+    "data": null
+  },
+  {
+    "id": 79,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T16:17:24.711Z",
+    "data": null
+  },
+  {
+    "id": 80,
+    "user_id": 1,
+    "activity_type": "user_update",
+    "description": "User status updated: John Doe is now active",
+    "entity_id": 4,
+    "entity_type": "user",
+    "created_at": "2025-04-28T16:19:32.704Z",
+    "data": null
+  },
+  {
+    "id": 81,
+    "user_id": 1,
+    "activity_type": "user_update",
+    "description": "User status updated: Talent User is now inactive",
+    "entity_id": 5,
+    "entity_type": "user",
+    "created_at": "2025-04-28T16:19:41.378Z",
+    "data": null
+  },
+  {
+    "id": 82,
+    "user_id": 1,
+    "activity_type": "user_update",
+    "description": "User status updated: Talent User is now active",
+    "entity_id": 5,
+    "entity_type": "user",
+    "created_at": "2025-04-28T16:19:52.137Z",
+    "data": null
+  },
+  {
+    "id": 83,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T16:22:32.808Z",
+    "data": null
+  },
+  {
+    "id": 84,
+    "user_id": 3,
+    "activity_type": "login",
+    "description": "User logged in: Deva",
+    "entity_id": 3,
+    "entity_type": "user",
+    "created_at": "2025-04-28T16:22:53.513Z",
+    "data": null
+  },
+  {
+    "id": 85,
+    "user_id": 3,
+    "activity_type": "logout",
+    "description": "User logged out: Deva",
+    "entity_id": 3,
+    "entity_type": "user",
+    "created_at": "2025-04-28T16:23:42.035Z",
+    "data": null
+  },
+  {
+    "id": 86,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T16:24:15.930Z",
+    "data": null
+  },
+  {
+    "id": 87,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T16:24:32.409Z",
+    "data": null
+  },
+  {
+    "id": 88,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T17:05:43.603Z",
+    "data": null
+  },
+  {
+    "id": 89,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T17:05:51.336Z",
+    "data": null
+  },
+  {
+    "id": 90,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:04:31.302Z",
+    "data": null
+  },
+  {
+    "id": 91,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:06:13.207Z",
+    "data": null
+  },
+  {
+    "id": 92,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:07:14.701Z",
+    "data": null
+  },
+  {
+    "id": 93,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:10:23.283Z",
+    "data": null
+  },
+  {
+    "id": 94,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:27:13.833Z",
+    "data": null
+  },
+  {
+    "id": 95,
+    "user_id": 9,
+    "activity_type": "profile_update",
+    "description": "Provider profile updated",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:27:37.493Z",
+    "data": null
+  },
+  {
+    "id": 96,
+    "user_id": 9,
+    "activity_type": "profile_update",
+    "description": "Provider profile updated",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:28:11.220Z",
+    "data": null
+  },
+  {
+    "id": 97,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:32:34.978Z",
+    "data": null
+  },
+  {
+    "id": 98,
+    "user_id": 6,
+    "activity_type": "login",
+    "description": "User logged in: Sarah Johnson",
+    "entity_id": 6,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:32:47.809Z",
+    "data": null
+  },
+  {
+    "id": 99,
+    "user_id": 6,
+    "activity_type": "logout",
+    "description": "User logged out: Sarah Johnson",
+    "entity_id": 6,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:33:16.599Z",
+    "data": null
+  },
+  {
+    "id": 100,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:33:27.619Z",
+    "data": null
+  },
+  {
+    "id": 101,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:34:00.496Z",
+    "data": null
+  },
+  {
+    "id": 102,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:34:12.421Z",
+    "data": null
+  },
+  {
+    "id": 103,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:38:17.195Z",
+    "data": null
+  },
+  {
+    "id": 104,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T18:56:38.205Z",
+    "data": null
+  },
+  {
+    "id": 105,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T19:08:00.544Z",
+    "data": null
+  },
+  {
+    "id": 106,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T19:18:47.042Z",
+    "data": null
+  },
+  {
+    "id": 107,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T19:25:26.035Z",
+    "data": null
+  },
+  {
+    "id": 108,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T19:26:27.911Z",
+    "data": null
+  },
+  {
+    "id": 109,
+    "user_id": 7,
+    "activity_type": "event_create",
+    "description": "New event created: Birthday Event",
+    "entity_id": 6,
+    "entity_type": "event",
+    "created_at": "2025-04-28T19:34:38.989Z",
+    "data": null
+  },
+  {
+    "id": 110,
+    "user_id": 7,
+    "activity_type": "event_create",
+    "description": "New event created: D night",
+    "entity_id": 7,
+    "entity_type": "event",
+    "created_at": "2025-04-28T19:39:22.307Z",
+    "data": null
+  },
+  {
+    "id": 111,
+    "user_id": 7,
+    "activity_type": "event_update",
+    "description": "Event updated: Birthday Event",
+    "entity_id": 6,
+    "entity_type": "event",
+    "created_at": "2025-04-28T19:58:24.054Z",
+    "data": null
+  },
+  {
+    "id": 112,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:15:43.926Z",
+    "data": null
+  },
+  {
+    "id": 113,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:16:01.247Z",
+    "data": null
+  },
+  {
+    "id": 114,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:16:45.028Z",
+    "data": null
+  },
+  {
+    "id": 115,
+    "user_id": 7,
+    "activity_type": "booking_created",
+    "description": "New booking created for Club DJ Performance",
+    "entity_id": 13,
+    "entity_type": "booking",
+    "created_at": "2025-04-28T20:17:28.283Z",
+    "data": null
+  },
+  {
+    "id": 116,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:17:55.065Z",
+    "data": null
+  },
+  {
+    "id": 117,
+    "user_id": 6,
+    "activity_type": "login",
+    "description": "User logged in: Sarah Johnson",
+    "entity_id": 6,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:20:52.163Z",
+    "data": null
+  },
+  {
+    "id": 118,
+    "user_id": 6,
+    "activity_type": "booking_created",
+    "description": "New booking created for Club DJ Performance",
+    "entity_id": 14,
+    "entity_type": "booking",
+    "created_at": "2025-04-28T20:21:11.891Z",
+    "data": null
+  },
+  {
+    "id": 119,
+    "user_id": 6,
+    "activity_type": "login",
+    "description": "User logged in: Sarah Johnson",
+    "entity_id": 6,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:21:41.211Z",
+    "data": null
+  },
+  {
+    "id": 120,
+    "user_id": 6,
+    "activity_type": "booking_created",
+    "description": "New booking created for Corporate Event DJ",
+    "entity_id": 15,
+    "entity_type": "booking",
+    "created_at": "2025-04-28T20:22:16.034Z",
+    "data": null
+  },
+  {
+    "id": 121,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:25:36.746Z",
+    "data": null
+  },
+  {
+    "id": 122,
+    "user_id": 11,
+    "activity_type": "login",
+    "description": "User logged in: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:26:10.973Z",
+    "data": null
+  },
+  {
+    "id": 123,
+    "user_id": 11,
+    "activity_type": "logout",
+    "description": "User logged out: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:26:19.069Z",
+    "data": null
+  },
+  {
+    "id": 124,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:26:30.933Z",
+    "data": null
+  },
+  {
+    "id": 125,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:28:03.246Z",
+    "data": null
+  },
+  {
+    "id": 126,
+    "user_id": 11,
+    "activity_type": "login",
+    "description": "User logged in: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:28:11.112Z",
+    "data": null
+  },
+  {
+    "id": 127,
+    "user_id": 11,
+    "activity_type": "logout",
+    "description": "User logged out: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:28:39.472Z",
+    "data": null
+  },
+  {
+    "id": 128,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:28:47.587Z",
+    "data": null
+  },
+  {
+    "id": 129,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:33:41.056Z",
+    "data": null
+  },
+  {
+    "id": 130,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:33:50.975Z",
+    "data": null
+  },
+  {
+    "id": 131,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:34:16.157Z",
+    "data": null
+  },
+  {
+    "id": 132,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:36:09.406Z",
+    "data": null
+  },
+  {
+    "id": 133,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:39:14.540Z",
+    "data": null
+  },
+  {
+    "id": 134,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:39:39.230Z",
+    "data": null
+  },
+  {
+    "id": 135,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:40:11.794Z",
+    "data": null
+  },
+  {
+    "id": 136,
+    "user_id": 7,
+    "activity_type": "booking_created",
+    "description": "New booking created for Wedding DJ Package",
+    "entity_id": 16,
+    "entity_type": "booking",
+    "created_at": "2025-04-28T20:40:30.850Z",
+    "data": null
+  },
+  {
+    "id": 137,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:40:51.157Z",
+    "data": null
+  },
+  {
+    "id": 138,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T20:49:07.768Z",
+    "data": null
+  },
+  {
+    "id": 139,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:10:23.282Z",
+    "data": null
+  },
+  {
+    "id": 140,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:10:23.383Z",
+    "data": null
+  },
+  {
+    "id": 141,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:10:52.765Z",
+    "data": null
+  },
+  {
+    "id": 142,
+    "user_id": 1,
+    "activity_type": "user_update",
+    "description": "User status updated: Zilal is now inactive",
+    "entity_id": 2,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:11:11.947Z",
+    "data": null
+  },
+  {
+    "id": 143,
+    "user_id": 1,
+    "activity_type": "user_update",
+    "description": "User status updated: Zilal is now active",
+    "entity_id": 2,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:12:23.461Z",
+    "data": null
+  },
+  {
+    "id": 144,
+    "user_id": 1,
+    "activity_type": "user_update",
+    "description": "User status updated: Deva is now inactive",
+    "entity_id": 3,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:12:59.671Z",
+    "data": null
+  },
+  {
+    "id": 145,
+    "user_id": 1,
+    "activity_type": "event_update",
+    "description": "Event status updated: Summer Music Festival is now in_progress",
+    "entity_id": 1,
+    "entity_type": "event",
+    "created_at": "2025-04-28T21:13:35.438Z",
+    "data": null
+  },
+  {
+    "id": 146,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:14:50.530Z",
+    "data": null
+  },
+  {
+    "id": 147,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:15:09.786Z",
+    "data": null
+  },
+  {
+    "id": 148,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:18:18.892Z",
+    "data": null
+  },
+  {
+    "id": 149,
+    "user_id": 11,
+    "activity_type": "login",
+    "description": "User logged in: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:18:29.518Z",
+    "data": null
+  },
+  {
+    "id": 150,
+    "user_id": 11,
+    "activity_type": "logout",
+    "description": "User logged out: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:24:12.248Z",
+    "data": null
+  },
+  {
+    "id": 151,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:26:07.463Z",
+    "data": null
+  },
+  {
+    "id": 152,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:26:21.780Z",
+    "data": null
+  },
+  {
+    "id": 153,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:27:56.557Z",
+    "data": null
+  },
+  {
+    "id": 154,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:28:01.964Z",
+    "data": null
+  },
+  {
+    "id": 155,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:52:55.353Z",
+    "data": null
+  },
+  {
+    "id": 156,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:53:56.357Z",
+    "data": null
+  },
+  {
+    "id": 157,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:54:34.145Z",
+    "data": null
+  },
+  {
+    "id": 158,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:54:54.562Z",
+    "data": null
+  },
+  {
+    "id": 159,
+    "user_id": 11,
+    "activity_type": "login",
+    "description": "User logged in: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:55:05.026Z",
+    "data": null
+  },
+  {
+    "id": 160,
+    "user_id": 11,
+    "activity_type": "logout",
+    "description": "User logged out: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T21:55:26.000Z",
+    "data": null
+  },
+  {
+    "id": 161,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:09:58.051Z",
+    "data": null
+  },
+  {
+    "id": 162,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:14:23.936Z",
+    "data": null
+  },
+  {
+    "id": 163,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:15:36.512Z",
+    "data": null
+  },
+  {
+    "id": 164,
+    "user_id": 1,
+    "activity_type": "user_update",
+    "description": "User status updated: John Doe is now inactive",
+    "entity_id": 4,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:16:30.335Z",
+    "data": null
+  },
+  {
+    "id": 165,
+    "user_id": 1,
+    "activity_type": "user_update",
+    "description": "User status updated: John Doe is now active",
+    "entity_id": 4,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:16:55.419Z",
+    "data": null
+  },
+  {
+    "id": 166,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:17:52.411Z",
+    "data": null
+  },
+  {
+    "id": 167,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:18:23.843Z",
+    "data": null
+  },
+  {
+    "id": 168,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:23:52.869Z",
+    "data": null
+  },
+  {
+    "id": 169,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:24:03.128Z",
+    "data": null
+  },
+  {
+    "id": 170,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:24:20.715Z",
+    "data": null
+  },
+  {
+    "id": 171,
+    "user_id": 11,
+    "activity_type": "login",
+    "description": "User logged in: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:24:32.440Z",
+    "data": null
+  },
+  {
+    "id": 172,
+    "user_id": 11,
+    "activity_type": "logout",
+    "description": "User logged out: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:30:56.849Z",
+    "data": null
+  },
+  {
+    "id": 173,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:33:09.049Z",
+    "data": null
+  },
+  {
+    "id": 174,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:33:18.250Z",
+    "data": null
+  },
+  {
+    "id": 175,
+    "user_id": 11,
+    "activity_type": "login",
+    "description": "User logged in: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:33:26.756Z",
+    "data": null
+  },
+  {
+    "id": 176,
+    "user_id": 11,
+    "activity_type": "logout",
+    "description": "User logged out: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:38:23.845Z",
+    "data": null
+  },
+  {
+    "id": 177,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:38:33.336Z",
+    "data": null
+  },
+  {
+    "id": 178,
+    "user_id": 9,
+    "activity_type": "profile_update",
+    "description": "Provider profile updated",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:40:19.520Z",
+    "data": null
+  },
+  {
+    "id": 179,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:47:23.609Z",
+    "data": null
+  },
+  {
+    "id": 180,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:47:32.090Z",
+    "data": null
+  },
+  {
+    "id": 181,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:47:36.155Z",
+    "data": null
+  },
+  {
+    "id": 182,
+    "user_id": 11,
+    "activity_type": "login",
+    "description": "User logged in: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:47:52.701Z",
+    "data": null
+  },
+  {
+    "id": 183,
+    "user_id": 11,
+    "activity_type": "logout",
+    "description": "User logged out: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:48:40.544Z",
+    "data": null
+  },
+  {
+    "id": 184,
+    "user_id": 11,
+    "activity_type": "login",
+    "description": "User logged in: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:49:34.540Z",
+    "data": null
+  },
+  {
+    "id": 185,
+    "user_id": 11,
+    "activity_type": "logout",
+    "description": "User logged out: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:49:43.055Z",
+    "data": null
+  },
+  {
+    "id": 186,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:51:41.239Z",
+    "data": null
+  },
+  {
+    "id": 187,
+    "user_id": 10,
+    "activity_type": "login",
+    "description": "User logged in: Lens Master",
+    "entity_id": 10,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:51:57.045Z",
+    "data": null
+  },
+  {
+    "id": 188,
+    "user_id": 11,
+    "activity_type": "login",
+    "description": "User logged in: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:52:34.108Z",
+    "data": null
+  },
+  {
+    "id": 189,
+    "user_id": 11,
+    "activity_type": "logout",
+    "description": "User logged out: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:54:35.285Z",
+    "data": null
+  },
+  {
+    "id": 190,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:54:46.676Z",
+    "data": null
+  },
+  {
+    "id": 191,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:59:12.499Z",
+    "data": null
+  },
+  {
+    "id": 192,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T22:59:24.340Z",
+    "data": null
+  },
+  {
+    "id": 193,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:06:00.814Z",
+    "data": null
+  },
+  {
+    "id": 194,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:06:24.992Z",
+    "data": null
+  },
+  {
+    "id": 195,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:07:36.670Z",
+    "data": null
+  },
+  {
+    "id": 196,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:07:49.590Z",
+    "data": null
+  },
+  {
+    "id": 197,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:08:24.758Z",
+    "data": null
+  },
+  {
+    "id": 198,
+    "user_id": 11,
+    "activity_type": "login",
+    "description": "User logged in: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:08:32.800Z",
+    "data": null
+  },
+  {
+    "id": 199,
+    "user_id": 11,
+    "activity_type": "logout",
+    "description": "User logged out: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:08:39.366Z",
+    "data": null
+  },
+  {
+    "id": 200,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:11:11.206Z",
+    "data": null
+  },
+  {
+    "id": 201,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:11:33.389Z",
+    "data": null
+  },
+  {
+    "id": 202,
+    "user_id": 11,
+    "activity_type": "login",
+    "description": "User logged in: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:11:41.798Z",
+    "data": null
+  },
+  {
+    "id": 203,
+    "user_id": 11,
+    "activity_type": "logout",
+    "description": "User logged out: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:13:06.342Z",
+    "data": null
+  },
+  {
+    "id": 204,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:15:45.324Z",
+    "data": null
+  },
+  {
+    "id": 205,
+    "user_id": 1,
+    "activity_type": "user_update",
+    "description": "User status updated: Deva is now active",
+    "entity_id": 3,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:16:24.826Z",
+    "data": null
+  },
+  {
+    "id": 206,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:17:04.819Z",
+    "data": null
+  },
+  {
+    "id": 207,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:17:06.796Z",
+    "data": null
+  },
+  {
+    "id": 208,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:17:18.127Z",
+    "data": null
+  },
+  {
+    "id": 209,
+    "user_id": 7,
+    "activity_type": "event_create",
+    "description": "New event created: New Year Eve",
+    "entity_id": 8,
+    "entity_type": "event",
+    "created_at": "2025-04-28T23:18:56.197Z",
+    "data": null
+  },
+  {
+    "id": 210,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:20:19.840Z",
+    "data": null
+  },
+  {
+    "id": 211,
+    "user_id": 11,
+    "activity_type": "login",
+    "description": "User logged in: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:20:31.156Z",
+    "data": null
+  },
+  {
+    "id": 212,
+    "user_id": 11,
+    "activity_type": "profile_update",
+    "description": "Provider profile updated",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:21:41.422Z",
+    "data": null
+  },
+  {
+    "id": 213,
+    "user_id": 11,
+    "activity_type": "logout",
+    "description": "User logged out: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:23:33.414Z",
+    "data": null
+  },
+  {
+    "id": 214,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:35:45.512Z",
+    "data": null
+  },
+  {
+    "id": 215,
+    "user_id": 1,
+    "activity_type": "user_update",
+    "description": "User status updated: Deva is now inactive",
+    "entity_id": 3,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:36:18.423Z",
+    "data": null
+  },
+  {
+    "id": 216,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:36:59.463Z",
+    "data": null
+  },
+  {
+    "id": 217,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:37:09.216Z",
+    "data": null
+  },
+  {
+    "id": 218,
+    "user_id": 7,
+    "activity_type": "event_create",
+    "description": "New event created: New Office",
+    "entity_id": 9,
+    "entity_type": "event",
+    "created_at": "2025-04-28T23:38:27.024Z",
+    "data": null
+  },
+  {
+    "id": 219,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:39:46.501Z",
+    "data": null
+  },
+  {
+    "id": 220,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:39:56.557Z",
+    "data": null
+  },
+  {
+    "id": 221,
+    "user_id": 9,
+    "activity_type": "profile_update",
+    "description": "Provider profile updated",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:40:19.078Z",
+    "data": null
+  },
+  {
+    "id": 222,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:41:48.239Z",
+    "data": null
+  },
+  {
+    "id": 223,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:49:46.750Z",
+    "data": null
+  },
+  {
+    "id": 224,
+    "user_id": 1,
+    "activity_type": "user_update",
+    "description": "User status updated: Deva is now active",
+    "entity_id": 3,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:50:19.629Z",
+    "data": null
+  },
+  {
+    "id": 225,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:51:09.337Z",
+    "data": null
+  },
+  {
+    "id": 226,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:51:21.872Z",
+    "data": null
+  },
+  {
+    "id": 227,
+    "user_id": 7,
+    "activity_type": "event_create",
+    "description": "New event created: Get together",
+    "entity_id": 10,
+    "entity_type": "event",
+    "created_at": "2025-04-28T23:52:31.228Z",
+    "data": null
+  },
+  {
+    "id": 228,
+    "user_id": 7,
+    "activity_type": "event_update",
+    "description": "Event updated: New Year Eve",
+    "entity_id": 8,
+    "entity_type": "event",
+    "created_at": "2025-04-28T23:53:24.556Z",
+    "data": null
+  },
+  {
+    "id": 229,
+    "user_id": 7,
+    "activity_type": "event_update",
+    "description": "Event updated: New Year Eve",
+    "entity_id": 8,
+    "entity_type": "event",
+    "created_at": "2025-04-28T23:53:53.077Z",
+    "data": null
+  },
+  {
+    "id": 230,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:55:17.658Z",
+    "data": null
+  },
+  {
+    "id": 231,
+    "user_id": 11,
+    "activity_type": "login",
+    "description": "User logged in: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:55:32.557Z",
+    "data": null
+  },
+  {
+    "id": 232,
+    "user_id": 11,
+    "activity_type": "profile_update",
+    "description": "Provider profile updated",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:55:59.268Z",
+    "data": null
+  },
+  {
+    "id": 233,
+    "user_id": 11,
+    "activity_type": "logout",
+    "description": "User logged out: Rhythm Squad",
+    "entity_id": 11,
+    "entity_type": "user",
+    "created_at": "2025-04-28T23:57:35.529Z",
+    "data": null
+  },
+  {
+    "id": 234,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-29T00:20:57.828Z",
+    "data": null
+  },
+  {
+    "id": 235,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-29T00:21:05.059Z",
+    "data": null
+  },
+  {
+    "id": 236,
+    "user_id": 1,
+    "activity_type": "login",
+    "description": "User logged in: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-29T14:33:44.688Z",
+    "data": null
+  },
+  {
+    "id": 237,
+    "user_id": 1,
+    "activity_type": "user_update",
+    "description": "User status updated: Deva is now inactive",
+    "entity_id": 3,
+    "entity_type": "user",
+    "created_at": "2025-04-29T14:34:38.197Z",
+    "data": null
+  },
+  {
+    "id": 238,
+    "user_id": 1,
+    "activity_type": "logout",
+    "description": "User logged out: Admin User",
+    "entity_id": 1,
+    "entity_type": "user",
+    "created_at": "2025-04-29T14:35:37.873Z",
+    "data": null
+  },
+  {
+    "id": 239,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-29T14:35:46.507Z",
+    "data": null
+  },
+  {
+    "id": 240,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-29T14:39:41.944Z",
+    "data": null
+  },
+  {
+    "id": 241,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-04-29T14:39:43.988Z",
+    "data": null
+  },
+  {
+    "id": 242,
+    "user_id": 9,
+    "activity_type": "login",
+    "description": "User logged in: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-29T14:39:59.206Z",
+    "data": null
+  },
+  {
+    "id": 243,
+    "user_id": 9,
+    "activity_type": "logout",
+    "description": "User logged out: DJ Maestro",
+    "entity_id": 9,
+    "entity_type": "user",
+    "created_at": "2025-04-29T15:05:19.065Z",
+    "data": null
+  },
+  {
+    "id": 244,
+    "user_id": 7,
+    "activity_type": "login",
+    "description": "User logged in: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-05-06T06:38:37.457Z",
+    "data": null
+  },
+  {
+    "id": 245,
+    "user_id": 7,
+    "activity_type": "logout",
+    "description": "User logged out: Michael Chen",
+    "entity_id": 7,
+    "entity_type": "user",
+    "created_at": "2025-05-06T06:39:02.764Z",
+    "data": null
+  }
+]
